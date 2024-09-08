@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.attribution {
+  position: absolute;
+  bottom: 10px;
+}
+
+.stars {
+  color: hsl(169, 82%, 27%);
+}
+
+.card {
+  width: 40%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+.card-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(187, 24%, 22%);
+}
+.card-body form {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-body form input,
+.query {
+  padding: 8px 12px;
+  outline: none;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 4px;
+}
+.card-body label {
+  margin-bottom: 7px;
+  font-size: 1rem;  
+}
+/* event */
+.card-body form input:hover,
+.card-body form input:focus {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid hsl(169, 82%, 27%);
+}
+
+/* flexbox card-body */
+/* ------------------ */
+.d-flex-bottom {
+  display: flex;
+  flex-direction: column;
+}
+/* name */
+.name {
+  display: flex;
+  gap: 12px;
+}
+.name-wrapper {
+  width: 50%;
+}
+/* query-type */
+.query-wrapper {
+  display: flex;
+  gap: 12px;
+}
+.query {
+  width: 50%;
+  transition: background-color 0.4s ease;
+}
+.query input[type='radio'] {
+  display: none;
+}
+.query label {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  padding-left: 28px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.query label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid hsl(169, 82%, 27%);
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+}
+.query input[type='radio']:checked + label::before {
+  background-color: hsl(148, 38%, 91%);
+  border-color: hsl(169, 82%, 27%);
+}
+.query input[type='radio']:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 4.5px;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: hsl(169, 82%, 27%);
+  transform: translateY(-50%);
+}
+.query:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+input[type='radio']:focus + .query {
+  background-color: hsl(169, 82%, 27%);
+}
+/* message */
+.message {
+    margin-bottom: 12px;
+}
+.message textarea {
+    height: 120px;
+    resize: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+.message textarea:hover, 
+.message textarea:focus {
+    outline: none;
+    border-color: hsl(169, 82%, 27%);
+}
+/* confirm */
+.confirm label {
+    font-size: 12px;
+}
+/* submit */
+.submit button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

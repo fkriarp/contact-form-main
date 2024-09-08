@@ -1,0 +1,82 @@
+/* Responsive CSS */
+
+/* Untuk tablet (768px ke bawah) */
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .card {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-body form {
+      gap: 10px;
+    }
+  
+    .name, .query-wrapper {
+      flex-direction: column;
+    }
+  
+    .name-wrapper {
+      width: 100%;
+    }
+  
+    .query {
+      width: 100%;
+    }
+  
+    .message textarea {
+      height: 100px;
+    }
+  }
+  
+  /* Untuk ponsel (480px ke bawah) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 20px;
+    }
+  
+    .card-body form {
+      gap: 8px;
+    }
+  
+    .name, .query-wrapper {
+      flex-direction: column;
+    }
+  
+    .name-wrapper {
+      width: 100%;
+    }
+  
+    .query {
+      width: 100%;
+    }
+  
+    .message textarea {
+      height: 80px;
+    }
+  
+    .attribution {
+      font-size: 10px;
+    }
+  
+    .submit button {
+      height: 35px;
+    }
+  }
+  
